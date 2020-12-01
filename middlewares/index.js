@@ -1,1 +1,5 @@
-module.exports = {};
+let isAuthenticated = require("./authenticated");
+
+module.exports = {
+  isAuthenticated,
+};

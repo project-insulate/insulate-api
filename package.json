@@ -5,22 +5,27 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node app.js",
+    "start-dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abhinav Chawla",
   "dependencies": {
     "@sendgrid/mail": "^7.2.6",
+    "axios": "^0.21.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "celebrate": "^11.0.0",
     "cors": "^2.8.5",
+    "date-fns": "^2.16.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "firebase-admin": "^8.9.0",
     "lodash": "^4.17.15",
     "mongoose": "^5.8.2",
     "morgan": "^1.9.1",
+    "qs": "^6.9.4",
     "sendgrid": "^5.2.3",
+    "uuid": "^8.3.1",
     "winston": "^3.2.1"
   },
   "devDependencies": {
