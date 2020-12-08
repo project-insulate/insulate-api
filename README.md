@@ -2,6 +2,8 @@
 
 <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/> <img src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/> 
 
+Project Insulate aims to protect an API call used by a provider to send data when dependent on Web Monetization. Currently, the only way to fetch data is to keep the endpoint public if no paid-user login is present on the UI. Also, this project ensures no user PPI is shared with the provider to maintain the privacy component of the Web Monetization technology.
+
 ## Deployment
 <a href="https://project-insulate.herokuapp.com/" target="_blank"><img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/></a>
 
@@ -44,3 +46,12 @@ SENDGRID_API_KEY=
 COIL_SECRET_BASE64=
 COIL_REDIRECT_URI=
 ```
+
+## Architectural Diagram
+**Current system (without Insulate)** ❌
+
+<img src="https://i.imgur.com/ZJZfxwe.png" width="500" />
+
+**Proposed system using Insulate** ✅
+
+<img src="https://i.imgur.com/oF32o9r.png" />
