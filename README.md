@@ -9,6 +9,25 @@ Project Insulate aims to protect an API call used by a provider to send data whe
 
 Heroku pipeline is set to auto deploy `master` branch currently.
 
+## Main functionality for Providers
+1. **Registration**: This will return you `client_id` and `client_secret`
+ ```
+curl --request POST 'https://project-insulate.herokuapp.com/api/provider' \
+     --data-urlencode 'email=hello@test.com'
+```
+
+2. **Verify transaction**: This will return you if the transaction was successfully added in last 5 minutes, if so, has it been used (by any previous verification call).
+```
+curl --request POST 'https://project-insulate.herokuapp.com/api/block/verify' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "paymentPointer": "$ilp.uphold.com/H3NqAwkm9g3W",
+    "clientSecret": "10cc6c3ea96bb3ab525c61af71dfa1e58d11159cfd5de3d6",
+    "transactionId": "c3798dce-4893-497e-8b80-f48a52896eda"
+}'
+```
+
+
 ## API Documentation
 <a href="https://documenter.getpostman.com/view/1085264/TVmS6uzb" target="_blank"><img src="https://img.shields.io/badge/-POSTMAN-orange?&style=for-the-badge&logo=postman&logoColor=white"/></a>
 
