@@ -20,7 +20,7 @@ async function create(req, res) {
    *
    * ? Look into reusing access token, right now generate new one always
    * ? Review handling of the case where btpToken is not found
-   * ? Check if block exists in last 5 minutes
+   * ? Check if block exists in last 5 minutes && not used
   */
   try {
     const { uid } = res.locals;
@@ -79,7 +79,7 @@ async function verify(req, res) {
    ** Step 3: Mark hash as used
    ** Step 4: Return verification status\
    *
-   * TODO: Use base64 as authorization verification, instead of client secret
+   * ? Use base64 as authorization verification, instead of client secret
   */
 
   try {
