@@ -31,6 +31,15 @@ curl --request POST 'https://project-insulate.herokuapp.com/api/block/verify' \
 ## API Documentation
 <a href="https://documenter.getpostman.com/view/1085264/TVmS6uzb" target="_blank"><img src="https://img.shields.io/badge/-POSTMAN-orange?&style=for-the-badge&logo=postman&logoColor=white"/></a>
 
+## Architectural Diagram
+**Current system (without Insulate)** ❌
+
+<img src="https://i.imgur.com/ZJZfxwe.png" width="500" />
+
+**Proposed system using Insulate** ✅
+
+<img src="https://i.imgur.com/oF32o9r.png" />
+
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) (atleast v12.13.0, npm v6.12.0) installed.
@@ -66,11 +75,3 @@ COIL_SECRET_BASE64=
 COIL_REDIRECT_URI=
 ```
 
-## Architectural Diagram
-**Current system (without Insulate)** ❌
-
-<img src="https://i.imgur.com/ZJZfxwe.png" width="500" />
-
-**Proposed system using Insulate** ✅
-
-<img src="https://i.imgur.com/oF32o9r.png" />
